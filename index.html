@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio pessoal de Estevão Sozinho — Técnico de Suporte Informático e Desenvolvimento Web.">
+  <meta name="author" content="Estevão Sozinho">
+  <title>Estêvão Sozinho</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Saltar para o conteúdo</a>
+  <header class="topbar">
+    <a class="brand" href="#inicio" aria-label="Estêvão Sozinho - início">
+      <span class="brand-mark">ES</span>
+      <span><strong></strong><small>Portfólio Pessoal</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="navigation" id="navigation" aria-label="Navegação principal">
+      <a href="#inicio" class="nav-link active" data-i18n="navHome">Início</a>
+      <a href="#sobre" class="nav-link" data-i18n="navAbout">Sobre Mim</a>
+      <a href="#habilidades" class="nav-link" data-i18n="navSkills">Habilidades</a>
+      <a href="#projectos" class="nav-link" data-i18n="navProjects">Projectos</a>
+      <a href="#contactos" class="nav-link" data-i18n="navContact">Contactos</a>
+      <button class="language-button" id="languageToggle" type="button" aria-label="Change language">EN</button>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero section-shell" id="inicio">
+      <div class="hero-copy">
+        <p class="eyebrow" data-i18n="eyebrow">TECNOLOGIA • CRIATIVIDADE • SOLUÇÕES</p>
+        <h1><span data-i18n="hello">Olá, eu sou</span><br>Estêvão <span class="gradient-text">Sozinho</span></h1>
+        <h2 data-i18n="role">Técnico de Suporte Informático | Desenvolvedor Web</h2>
+        <p class="hero-description" data-i18n="intro">Sou apaixonado por tecnologia, programação e inovação. Desenvolvo soluções digitais e procuro transformar ideias em experiências úteis e simples.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projectos" data-i18n="seeProjects">Ver projectos <span aria-hidden="true">↗</span></a>
+          <a class="button button-ghost" href="#contactos" data-i18n="contactMe">Entrar em contacto</a>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span><span data-i18n="available">Aberto a aprendizagem e colaboração</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="portrait-glow"></div>
+        <img class="profile-photo" src="Yudi.jpeg">
+        <div class="floating-card card-code"><span class="mini-icon">&lt;/&gt;</span><span>HTML · CSS · JS</span></div>
+        <div class="floating-card card-role"><span class="mini-icon">✦</span><span>IT Support</span></div>
+      </div>
+    </section>
+
+    <section class="section-shell about-grid" id="sobre">
+      <article class="panel about-panel">
+        <p class="eyebrow" data-i18n="aboutLabel">CONHEÇA-ME</p>
+        <h2 class="section-title" data-i18n="aboutTitle">Sobre <span class="gradient-text">Mim</span></h2>
+        <p data-i18n="aboutText">Sou estudante e profissional em formação na área de Tecnologias de Informação. Tenho interesse em suporte informático, desenvolvimento web, redes e sistemas. Valorizo a aprendizagem contínua, a criatividade e a resolução de problemas.</p>
+        <div class="values-list">
+          <span>✓ <span data-i18n="value1">Aprendizagem contínua</span></span>
+          <span>✓ <span data-i18n="value2">Trabalho em equipa</span></span>
+          <span>✓ <span data-i18n="value3">Responsabilidade e inovação</span></span>
+        </div>
+      </article>
+      <article class="panel skills-panel" id="habilidades">
+        <p class="eyebrow" data-i18n="skillsLabel">O QUE SEI FAZER</p>
+        <h2 class="section-title" data-i18n="skillsTitle">Minhas <span class="gradient-text">Habilidades</span></h2>
+        <div class="skills-grid">
+          <div class="skill"><span class="skill-symbol html">5</span><strong>HTML5</strong><small data-i18n="skillStructure">Estrutura web</small></div>
+          <div class="skill"><span class="skill-symbol css">3</span><strong>CSS3</strong><small data-i18n="skillStyle">Estilo e layout</small></div>
+          <div class="skill"><span class="skill-symbol js">JS</span><strong>JavaScript</strong><small data-i18n="skillInteraction">Interactividade</small></div>
+          <div class="skill"><span class="skill-symbol net">⌘</span><strong data-i18n="skillNetworks">Redes</strong><small data-i18n="skillNetworkDesc">Redes locais</small></div>
+          <div class="skill"><span class="skill-symbol support">⚙</span><strong data-i18n="skillSupport">Suporte</strong><small data-i18n="skillSupportDesc">Apoio técnico</small></div>
+          <div class="skill"><span class="skill-symbol db">▤</span><strong data-i18n="skillDatabases">Bases de dados</strong><small data-i18n="skillDataDesc">Noções básicas</small></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="section-shell projects-section" id="projectos">
+      <div class="section-heading">
+        <div><p class="eyebrow" data-i18n="workLabel">TRABALHOS SELECCIONADOS</p><h2 class="section-title" data-i18n="projectsTitle">Projectos em <span class="gradient-text">Destaque</span></h2></div>
+        <p class="heading-side" data-i18n="projectsSub">Ideias transformadas em soluções digitais.</p>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card">
+          <div class="project-image"><img src="Captura de ecrã.png" loading="lazy"><span class="project-number">01</span></div>
+          <div class="project-content"><p class="project-type" data-i18n="projectTypeWeb">DESENVOLVIMENTO WEB</p><h3>Menu Digital — Matola Rio</h3><p data-i18n="project1Desc">Conceito de menu digital para restaurantes, com apresentação de pratos e navegação simples. Planeado para integrar QR Code e carrinho de pedidos.</p><div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-image"><img src="YD SOFTWARE2.png" loading="lazy"><span class="project-number">02</span></div>
+          <div class="project-content"><p class="project-type" data-i18n="projectTypeBrand">SOLUÇÕES DIGITAIS</p><h3>YUDI SOLUTIONS</h3><p data-i18n="project2Desc">Conceito de marca para serviços de criação de websites, sistemas e suporte informático.</p><div class="tags"><span>Web</span><span>Software</span><span>Suporte</span></div></div>
+        </article>
+        <article class="project-card">
+          <div class="project-image"><img src="CoolSec.png" loading="lazy"><span class="project-number">03</span></div>
+          <div class="project-content"><p class="project-type" data-i18n="projectTypeTech">TECNOLOGIA</p><h3>CoolSec, LDA</h3><p data-i18n="project3Desc">Conceito de presença digital para serviços de segurança electrónica, redes e soluções tecnológicas.</p><div class="tags"><span>Redes</span><span>Segurança</span><span>Web</span></div></div>
+        </article>
+      </div>
+      <p class="image-disclaimer" data-i18n="imageNote">Nota: as pré-visualizações dos projectos são ilustrativas. Substitua-as por capturas de ecrã dos sistemas finais quando estiverem disponíveis.</p>
+    </section>
+
+    <section class="section-shell contact-section" id="contactos">
+      <div class="contact-intro"><p class="eyebrow" data-i18n="contactLabel">VAMOS CONVERSAR</p><h2 class="section-title" data-i18n="contactTitle">Entre em <span class="gradient-text">Contacto</span></h2><p data-i18n="contactText">Tem uma ideia ou oportunidade? Estou disponível para conversar sobre tecnologia e projectos.</p></div>
+      <div class="contact-cards">
+        <a class="contact-card" href="tel:+258879799381"><span class="contact-icon">☎</span><span><small data-i18n="phone">Telefone</small><strong>+258 87 979 9381</strong></span></a>
+        <a class="contact-card" href="https://wa.me/258879799381" target="_blank" rel="noopener noreferrer"><span class="contact-icon">◉</span><span><small>WhatsApp</small><strong data-i18n="sendMessage">Enviar mensagem</strong></span></a>
+        <div class="contact-card"><span class="contact-icon">⌖</span><span><small data-i18n="location">E-mail</small><strong>estevaomalung3@gmail.com</strong></span></div>
+      </div>
+    </section>
+  </main>
+
+  
+
+  <footer class="footer">
+    <a class="brand footer-brand" href="#inicio"><span class="brand-mark">ES</span><span><strong></strong><small>Portfólio Pessoal</small></span></a>
+    <p>© <span id="year"></span> Estevão Sozinho. <span data-i18n="rights">Todos os direitos reservados.</span></p>
+    <a class="back-top" href="#inicio" aria-label="Voltar ao início">↑</a>
+  </footer>
+</body>
+</html>
